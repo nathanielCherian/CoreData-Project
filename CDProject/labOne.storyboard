@@ -15,25 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-wj-tee">
-                                <rect key="frame" x="186" y="281" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQT-Qt-bdu">
-                                <rect key="frame" x="174" y="408" width="66" height="30"/>
+                                <rect key="frame" x="154" y="339" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Count Up"/>
+                                <state key="normal" title="Create Account"/>
                                 <connections>
                                     <action selector="countUp:" destination="JYl-gB-NKn" eventType="touchUpInside" id="1tT-Aa-a0S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-3g-qfU">
-                                <rect key="frame" x="167" y="456" width="85" height="30"/>
+                                <rect key="frame" x="243" y="832" width="171" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Count Down"/>
+                                <state key="normal" title="DELETE ALL ACCOUNTS">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteAll:" destination="JYl-gB-NKn" eventType="touchUpInside" id="ymD-vj-YZ9"/>
                                 </connections>
@@ -51,9 +46,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yit-IS-ahA">
-                                <rect key="frame" x="175" y="599" width="69" height="30"/>
+                                <rect key="frame" x="14" y="832" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select PIc"/>
+                                <state key="normal" title="Select PIc">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectPic:" destination="JYl-gB-NKn" eventType="touchUpInside" id="Sxv-ew-gr3"/>
                                 </connections>
@@ -63,7 +60,6 @@
                         <viewLayoutGuide key="safeArea" id="RI0-DU-vSR"/>
                     </view>
                     <connections>
-                        <outlet property="countLabel" destination="E6T-wj-tee" id="SJ5-ei-HnZ"/>
                         <outlet property="imageV" destination="CkV-7e-ATi" id="BP4-tp-xrK"/>
                     </connections>
                 </viewController>

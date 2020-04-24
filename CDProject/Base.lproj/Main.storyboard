@@ -16,19 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QR-VM-FyR">
-                                <rect key="frame" x="177" y="183" width="60" height="30"/>
+                                <rect key="frame" x="154" y="183" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lab ONe"/>
+                                <state key="normal" title="Create Account"/>
                                 <connections>
                                     <segue destination="okz-Ht-E6z" kind="show" id="hfy-DO-qGt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRu-jm-igq">
-                                <rect key="frame" x="177" y="261" width="68" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="profile"/>
-                                <connections>
-                                    <segue destination="ejA-sE-hNq" kind="show" id="dj2-2Y-Ele"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6U-Gh-ZJq">
@@ -37,6 +29,14 @@
                                 <state key="normal" title="Feed"/>
                                 <connections>
                                     <segue destination="szg-rA-bcg" kind="show" id="mHX-Vu-aWU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRu-jm-igq">
+                                <rect key="frame" x="173" y="251" width="68" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="profile"/>
+                                <connections>
+                                    <segue destination="ejA-sE-hNq" kind="show" id="dj2-2Y-Ele"/>
                                 </connections>
                             </button>
                         </subviews>
