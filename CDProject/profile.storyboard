@@ -27,9 +27,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1o-vj-zP4">
-                                <rect key="frame" x="348" y="763" width="46" height="30"/>
+                                <rect key="frame" x="288" y="763" width="106" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Change Picture"/>
+                                <connections>
+                                    <action selector="changePic:" destination="pf3-Ih-Zkr" eventType="touchUpInside" id="uiP-JL-kms"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QH7-rH-wfa">
                                 <rect key="frame" x="80" y="481" width="254" height="227"/>
@@ -40,14 +43,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9e-ax-P7E">
-                                <rect key="frame" x="211" y="763" width="111" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Edit Bio"/>
-                                <connections>
-                                    <action selector="editsave:" destination="pf3-Ih-Zkr" eventType="touchUpInside" id="0Sd-Ya-l6P"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHc-7T-gzU">
                                 <rect key="frame" x="36" y="763" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,6 +57,14 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="pf3-Ih-Zkr" eventType="touchUpInside" id="4al-Lp-RuW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9e-ax-P7E">
+                                <rect key="frame" x="138" y="763" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edit Bio"/>
+                                <connections>
+                                    <action selector="editsave:" destination="pf3-Ih-Zkr" eventType="touchUpInside" id="0Sd-Ya-l6P"/>
                                 </connections>
                             </button>
                         </subviews>

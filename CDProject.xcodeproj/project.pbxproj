@@ -21,6 +21,8 @@
 		D81915E5244F932700AB7A4B /* persistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81915E4244F932700AB7A4B /* persistenceService.swift */; };
 		D81915E7245297F700AB7A4B /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81915E6245297F700AB7A4B /* profile.storyboard */; };
 		D81915E924529BB200AB7A4B /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81915E824529BB200AB7A4B /* profile.swift */; };
+		D81915ED2452AF3A00AB7A4B /* feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81915EC2452AF3A00AB7A4B /* feed.storyboard */; };
+		D81915EF2452B12B00AB7A4B /* feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81915EE2452B12B00AB7A4B /* feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		D81915E4244F932700AB7A4B /* persistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = persistenceService.swift; sourceTree = "<group>"; };
 		D81915E6245297F700AB7A4B /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		D81915E824529BB200AB7A4B /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		D81915EC2452AF3A00AB7A4B /* feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = feed.storyboard; sourceTree = "<group>"; };
+		D81915EE2452B12B00AB7A4B /* feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +80,13 @@
 				D81915C4244E47CA00AB7A4B /* SceneDelegate.swift */,
 				D81915C6244E47CA00AB7A4B /* ViewController.swift */,
 				D81915D9244E49E400AB7A4B /* labOne.swift */,
+				D81915EE2452B12B00AB7A4B /* feed.swift */,
 				D81915E824529BB200AB7A4B /* profile.swift */,
 				D81915E0244F911C00AB7A4B /* User+CoreDataClass.swift */,
 				D81915E2244F923300AB7A4B /* User+CoreDataProperties.swift */,
 				D81915E4244F932700AB7A4B /* persistenceService.swift */,
 				D81915C8244E47CA00AB7A4B /* Main.storyboard */,
+				D81915EC2452AF3A00AB7A4B /* feed.storyboard */,
 				D81915E6245297F700AB7A4B /* profile.storyboard */,
 				D81915DB244E49EE00AB7A4B /* labOne.storyboard */,
 				D81915CE244E47CC00AB7A4B /* Assets.xcassets */,
@@ -151,6 +157,7 @@
 			files = (
 				D81915D2244E47CC00AB7A4B /* LaunchScreen.storyboard in Resources */,
 				D81915DC244E49EE00AB7A4B /* labOne.storyboard in Resources */,
+				D81915ED2452AF3A00AB7A4B /* feed.storyboard in Resources */,
 				D81915E7245297F700AB7A4B /* profile.storyboard in Resources */,
 				D81915CF244E47CC00AB7A4B /* Assets.xcassets in Resources */,
 				D81915CA244E47CA00AB7A4B /* Main.storyboard in Resources */,
@@ -167,6 +174,7 @@
 				D81915E924529BB200AB7A4B /* profile.swift in Sources */,
 				D81915CD244E47CA00AB7A4B /* CDProject.xcdatamodeld in Sources */,
 				D81915E5244F932700AB7A4B /* persistenceService.swift in Sources */,
+				D81915EF2452B12B00AB7A4B /* feed.swift in Sources */,
 				D81915E1244F911C00AB7A4B /* User+CoreDataClass.swift in Sources */,
 				D81915C7244E47CA00AB7A4B /* ViewController.swift in Sources */,
 				D81915E3244F923300AB7A4B /* User+CoreDataProperties.swift in Sources */,

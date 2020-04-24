@@ -24,8 +24,13 @@ class profile: UIViewController{
     var users = [User]()
     var user = 0
     
+    var imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePicker.delegate = self
+
         
         loadData() // loads in user CoreData into local array
         
@@ -63,7 +68,7 @@ class profile: UIViewController{
                 let username = alert.textFields!.first!.text!
                 let password = alert.textFields!.last!.text!
                 var x = false
-                for i in Range(0...self.users.count){
+                for i in Range(0...self.users.count-1){
                     if self.users[i].username == username && self.users[i].password == password{
                         self.user = i
                         self.start()
@@ -73,6 +78,9 @@ class profile: UIViewController{
                 }
                 if x != true{
                     print("unsuccesful login")
+                    let alert = UIAlertController(title: "Incorrect Login", message: "try again or make a new account", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
             alert.addAction(action)
@@ -108,10 +116,30 @@ class profile: UIViewController{
         }
     }
     
+    @IBAction func changePic(_ sender: Any) {
+        self.imagePicker.sourceType = .photoLibrary
+        self.imagePicker.allowsEditing = true
+        self.present(self.imagePicker, animated: true, completion: nil)
+
+    }
     
     
     }
     
-    
+    extension profile: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+                let data = image.pngData()
+                self.users[user].profpic = data! as NSData
+                persistenceService.saveContext()
+                imageView.image = image
+                
+
+                
+            }
+            dismiss(animated: true, completion: nil)
+        }
+        
+    }
 
 

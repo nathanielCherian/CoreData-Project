@@ -31,6 +31,14 @@
                                     <segue destination="ejA-sE-hNq" kind="show" id="dj2-2Y-Ele"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6U-Gh-ZJq">
+                                <rect key="frame" x="169" y="368" width="76" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Feed"/>
+                                <connections>
+                                    <segue destination="szg-rA-bcg" kind="show" id="mHX-Vu-aWU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,6 +67,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWc-wq-e7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="530" y="240"/>
+        </scene>
+        <!--feed-->
+        <scene sceneID="t1a-UK-11P">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="feed" storyboardName="feed" referencedIdentifier="feed" id="szg-rA-bcg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hx2-eC-vPF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kw-jf-sov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="230"/>
         </scene>
     </scenes>
 </document>
